@@ -17,7 +17,7 @@ Untuk dapat menjalankan automation test ini,
 ### How To Play?
 Setelah kedua requirement diatas terpenuhi, project ini sudah dapat dijalankan dengan cara  mengclone this repo atau download secara manual kemudian extract, lalu buka terminal/cmd, masuk ke direktori dimana project ini diextract
 
--jalankan 'npm install'
+- jalankan 'npm install'
 - tunggu hingga prosesnya selesai
 - setelah itu silahkan buat akun pada themoviedb.org, karna test ini membutuhkan akun untuk dapat dijalankan. lalu
 - buka file 'cypress.config.js', ganti value dari property berikut dengan akun kamu
@@ -57,10 +57,9 @@ Enjoy.....
 
 
 Tested ON:
-
-Linux Mint 
-Chrome Version : v117
-Electron Version : v114
+- Linux Mint 
+- Chrome Version : v117
+- Electron Version : v114
 
 
 SALAM... 
