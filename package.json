@@ -1,0 +1,25 @@
+{
+  "name": "cypress12 upgrade 13",
+  "version": "1.0.0",
+  "description": "Cypress 13 for Test",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-real-events": "^1.10.3",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

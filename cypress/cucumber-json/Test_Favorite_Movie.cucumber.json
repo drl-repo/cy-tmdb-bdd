@@ -1,0 +1,578 @@
+[
+  {
+    "description": "    User dapat menyimpan Movie kedalam daftar favorit mereka\n    movies favorit akan tampil pada halaman favorite dari masing-masing user",
+    "keyword": "Feature",
+    "name": "Mark movie as Favorite",
+    "line": 2,
+    "id": "mark-movie-as-favorite",
+    "tags": [
+      {
+        "name": "@MAF",
+        "line": 1
+      }
+    ],
+    "uri": "Test_Favorite_Movie.feature",
+    "elements": [
+      {
+        "id": "mark-movie-as-favorite;clear-favorite-movie-list",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Clear favorite movie list",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user clear favorite movie list",
+            "result": {
+              "status": "passed",
+              "duration": 28975000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;users-can-only-“mark-as-favorite”-when-they-are-logged-in",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Users can only “mark as favorite” when they are logged in",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@close-cookie-box",
+            "line": 11
+          },
+          {
+            "name": "@lang-id",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user at home page",
+            "result": {
+              "status": "passed",
+              "duration": 6697000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user choose movie at number 1",
+            "result": {
+              "status": "passed",
+              "duration": 14796000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user should see detail movie page",
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user click Mark as Favorite button",
+            "result": {
+              "status": "passed",
+              "duration": 1978000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Mark as Favorite icon color is 'Not Pink'",
+            "result": {
+              "status": "passed",
+              "duration": 479000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Mark as Favorite button should show tooltip 'Masuk untuk menambahkan film ke daftar sukaan anda'",
+            "result": {
+              "status": "passed",
+              "duration": 1661000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;user-can-mark-movie-as-favorite",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "User can mark movie as favorite",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 20
+          },
+          {
+            "name": "@lang-id",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "user at home page",
+            "result": {
+              "status": "passed",
+              "duration": 14259000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "user choose movie at number 2",
+            "result": {
+              "status": "passed",
+              "duration": 12084000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user should see detail movie page",
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "user click Mark as Favorite button",
+            "result": {
+              "status": "passed",
+              "duration": 2161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Mark as Favorite icon color is 'Pink'",
+            "result": {
+              "status": "passed",
+              "duration": 1298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "user at favorite movie page",
+            "result": {
+              "status": "passed",
+              "duration": 4927000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "user should see the favorited movie",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;user-can-mark-movie-as-favorite-more-than-once",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "User can mark movie as favorite more than once",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 30
+          },
+          {
+            "name": "@lang-id",
+            "line": 30
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "user at home page",
+            "result": {
+              "status": "passed",
+              "duration": 11844000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "user choose movie at number 4",
+            "result": {
+              "status": "passed",
+              "duration": 9792000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "user should see detail movie page",
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user click Mark as Favorite button",
+            "result": {
+              "status": "passed",
+              "duration": 2696000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Mark as Favorite icon color is 'Pink'",
+            "result": {
+              "status": "passed",
+              "duration": 1443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "user at favorite movie page",
+            "result": {
+              "status": "passed",
+              "duration": 5101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "user should see the favorited movie",
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "verify count of favorited movie more than one",
+            "result": {
+              "status": "passed",
+              "duration": 440000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;user-can-remove-movie-from-their-favorite-list",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "User can remove movie from their favorite list",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 41
+          },
+          {
+            "name": "@lang-id",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "user at favorite movie page",
+            "result": {
+              "status": "passed",
+              "duration": 9974000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user remove favorited movie from their favorite list",
+            "result": {
+              "status": "passed",
+              "duration": 2126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "favorited movie should be removed from list",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 10000ms: expected '<div.items_wrapper>' not to contain 'Kill \\'em All 2'\n    at Context.eval (cypress/e2e/step_definitions/favorite_movie_steps.js:51:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;we-need-minimum-3-item-to-test-sorting-test,-so-add-again",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "We Need minimum 3 item to test sorting test, so add again",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 47
+          },
+          {
+            "name": "@lang-id",
+            "line": 47
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "user at home page",
+            "result": {
+              "status": "passed",
+              "duration": 12118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "user choose movie at number 6",
+            "result": {
+              "status": "passed",
+              "duration": 10571000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "user should see detail movie page",
+            "result": {
+              "status": "passed",
+              "duration": 215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "user click Mark as Favorite button",
+            "result": {
+              "status": "passed",
+              "duration": 2812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "Mark as Favorite icon color is 'Pink'",
+            "result": {
+              "status": "passed",
+              "duration": 1125000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;we-need-minimum-3-item-to-test-sorting-test,-so-add-again",
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "We Need minimum 3 item to test sorting test, so add again",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 47
+          },
+          {
+            "name": "@lang-id",
+            "line": 47
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "user at home page",
+            "result": {
+              "status": "passed",
+              "duration": 13721000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "user choose movie at number 8",
+            "result": {
+              "status": "passed",
+              "duration": 12608000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "user should see detail movie page",
+            "result": {
+              "status": "passed",
+              "duration": 398000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "user click Mark as Favorite button",
+            "result": {
+              "status": "passed",
+              "duration": 2123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "Mark as Favorite icon color is 'Pink'",
+            "result": {
+              "status": "passed",
+              "duration": 2663000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mark-movie-as-favorite;user-can-sorting-their-favorited-movie-by-released-date",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "User can sorting their favorited movie by released date",
+        "tags": [
+          {
+            "name": "@MAF",
+            "line": 1
+          },
+          {
+            "name": "@must-logged-in",
+            "line": 60
+          },
+          {
+            "name": "@lang-en",
+            "line": 60
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 62,
+            "name": "user at favorite movie page",
+            "result": {
+              "status": "passed",
+              "duration": 11597000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "user sort by Released Date",
+            "result": {
+              "status": "passed",
+              "duration": 4824000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "list favorite movie should be sorted by Released Date",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 10000ms: expected [ Array(4) ] to deeply equal [ Array(4) ]\n    + expected - actual\n\n    -[ Wed, 25 Sep 2024 17:00:00 GMT,\n    +[ Thu, 19 Sep 2024 17:00:00 GMT,\n       Mon, 23 Sep 2024 17:00:00 GMT,\n    -  Thu, 03 Oct 2024 17:00:00 GMT,\n    -  Thu, 19 Sep 2024 17:00:00 GMT ]\n    +  Wed, 25 Sep 2024 17:00:00 GMT,\n    +  Thu, 03 Oct 2024 17:00:00 GMT ]\n\n    at Context.eval (cypress/e2e/step_definitions/favorite_movie_steps.js:117:46)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
